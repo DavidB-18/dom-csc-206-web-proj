@@ -1,0 +1,29 @@
+/* ================================================
+   MARKETPLACE — Main CSS Entry Point
+   All section CSS files are imported here in order.
+   Do NOT write styles here — use the section files.
+   ================================================ */
+
+@import './reset.css';
+@import './variables.css';
+
+/* ── Benson ────────────────────────────────────── */
+@import './sections/navbar.css';
+@import './sections/hero.css';
+@import './sections/categories.css';
+
+/* ── Nelson ────────────────────────────────────── */
+@import './sections/deals.css';
+@import './sections/outdoor.css';
+
+/* ── Ogo ───────────────────────────────────────── */
+@import './sections/electronics.css';
+
+/* ── Ini ───────────────────────────────────────── */
+@import './sections/recommended.css';
+
+/* ── Frank ─────────────────────────────────────── */
+@import './sections/cta.css';
+
+/* ── Obama ─────────────────────────────────────── */
+@import './sections/footer.css';
