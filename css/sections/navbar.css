@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e8e2e2;
+}
+
+.navbar-wrapper {
+  border-bottom: 2px solid #3b82f6;
+}
+
+/* ── Top Bar ── */
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  gap: 24px;
+  border: 2px solid rgb(189, 189, 189);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.logo-accent {
+  color: #f43f5e;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #c084fc;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1;
+  max-width: 480px;
+}
+
+.search-bar input[type="search"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.search-bar input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-divider {
+  width: 1px;
+  height: 22px;
+  background: #ddd;
+  flex-shrink: 0;
+}
+
+.category-select {
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  color: #444;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.search-btn {
+  padding: 11px 20px;
+  background: #c084fc;
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.search-btn:hover {
+  background: #a855f7;
+}
+
+/* Nav Icons */
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.7rem;
+}
+
+.nav-icon:hover {
+  color: #c084fc;
+}
+
+/* ── Bottom Nav ── */
+.navbar-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 32px;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  border-bottom: 2px solid black;
+}
+
+.bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.bottom-left a {
+  text-decoration: none;
+  color: #333;
+}
+
+.bottom-left a:hover {
+  color: #c084fc;
+}
+
+.all-category {
+  font-weight: 500;
+}
+
+.nav-sep {
+  color: #ccc;
+}
+
+.bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
