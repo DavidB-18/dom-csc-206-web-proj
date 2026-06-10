@@ -1,0 +1,195 @@
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #e9ecef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    #cta {
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+      min-height: 340px;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      align-items: stretch;
+      background: #d6dde6;
+    }
+
+    /* Background image layer */
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          to right,
+          rgba(220, 228, 236, 0.92) 0%,
+          rgba(210, 220, 232, 0.70) 38%,
+          rgba(180, 200, 220, 0.20) 62%,
+          rgba(180, 200, 220, 0.10) 100%
+        ),
+        url() center/cover no-repeat;
+      z-index: 0;
+    }
+
+    /* Text content */
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 40px 48px 48px;
+      max-width: 460px;
+    }
+
+    .cta-content h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #b50fd6;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .cta-content p {
+      font-size: 0.92rem;
+      color: #b50fd6;
+      line-height: 1.6;
+      max-width: 320px;
+    }
+
+    /* Form card */
+    .cta-card {
+      position: relative;
+      z-index: 2;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 28px 24px;
+      width: 300px;
+      min-width: 280px;
+      margin: 28px 28px 28px auto;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-self: center;
+    }
+
+    .cta-card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: gold;
+      margin-bottom: 2px;
+    }
+
+    .cta-card input[type="text"],
+    .cta-card textarea {
+      width: 100%;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.875rem;
+      color: gold;
+      background: #fff;
+      outline: none;
+      transition: border-color 0.2s;
+      resize: none;
+      font-family: inherit;
+    }
+
+    .cta-card input[type="text"]::placeholder,
+    .cta-card textarea::placeholder {
+      color: #9ca3af;
+    }
+
+    .cta-card input[type="text"]:focus,
+    .cta-card textarea:focus {
+      border-color: #3b5bdb;
+    }
+
+    .cta-card textarea {
+      height: 90px;
+    }
+
+    .cta-qty {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .cta-qty input[type="text"] {
+      flex: 1;
+    }
+
+    .cta-qty select {
+      width: 90px;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 10px 10px;
+      font-size: 0.875rem;
+      color: #374151;
+      background: #fff;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s;
+      font-family: inherit;
+    }
+
+    .cta-qty select:focus {
+      border-color: #3b5bdb;
+    }
+
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #3b5bdb;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      width: 100%;
+      font-family: inherit;
+    }
+
+    .cta-btn:hover {
+      background: #2f4ac4;
+    }
+
+    .cta-btn:active {
+      transform: scale(0.98);
+    }
+
+    .cta-btn svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 720px) {
+      #cta {
+        flex-direction: column;
+        min-height: unset;
+      }
+      .cta-content {
+        max-width: 100%;
+        padding: 36px 24px 24px;
+      }
+      .cta-card {
+        width: auto;
+        margin: 0 20px 28px;
+      }
+    }
