@@ -2,7 +2,7 @@
 
 # Marketplace Website
 
-A multi-section marketplace homepage built with vanilla HTML, CSS and JavaScript.
+A multi-section e-commerce marketplace homepage built with vanilla HTML, CSS, and JavaScript. This is a team project for CSC 206, split across six contributors with each person owning one or more sections.
 
 ## Team
 
@@ -15,22 +15,38 @@ A multi-section marketplace homepage built with vanilla HTML, CSS and JavaScript
 | Frank | Call to Action | cta.css |
 | Obama | Footer | footer.css |
 
-## Rules
+## Project Structure
 
-- Never edit another person's CSS file
-- Never edit reset.css or variables.css without team agreement
-- Always work on your own branch named after your section e.g. feat/navbar
-- Only merge into main when your section is complete and reviewed
+dom-csc-206-web-proj/
+├── index.html
+├── main.js
+├── ASSETS/
+└── css/
+    ├── main.css
+    ├── navbar.css
+    ├── hero.css
+    ├── deals.css
+    ├── outdoor.css
+    ├── electronics.css
+    ├── recommended.css
+    ├── cta.css
+    └── footer.css
+
+## Tech Stack
+
+- HTML5 — single index.html file
+- CSS3 — per-section CSS files imported via main.css
+- JavaScript — main.js for interactive behaviour
 
 ## Branching
 
-- main — production ready code only
-- feat/navbar — Benson
-- feat/deals — Nelson
-- feat/electronics — Ogo
-- feat/recommended — Ini
-- feat/cta — Frank
-- feat/footer — Obama
+main                     ← active development,stable, production-ready
+feature/navbar-hero     ← Benson
+feature/deals-outdoor   ← Nelson
+feature/electronics     ← Ogo
+feature/recommended     ← Ini
+feature/cta             ← Frank
+feature/footer          ← Obama
 
 ## Getting Started
 
