@@ -1,0 +1,140 @@
+#hero {
+  display: flex;
+  gap: 16px;
+  padding: 24px 32px;
+  margin: 24px 32px;
+  border-radius: 16px;
+  align-items: flex-start;
+  background: #fff;
+}
+
+.category-sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.category-item:hover,
+.category-item.active {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+.category-item.active svg {
+  stroke: #7c3aed;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.55fr;
+  gap: 16px;
+  flex: 1;
+}
+
+.banner {
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 32px 28px;
+  position: relative;
+  min-height: 300px;
+}
+
+.banner-main {
+  background: url('your-main-banner.jpg') center/cover no-repeat;
+  background-color: #c084fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.banner-sub {
+  font-size: 1.1rem;
+  color: #f43f5e;
+  font-weight: 500;
+}
+
+.banner-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.2;
+}
+
+.banner-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 28px;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.2s;
+}
+
+.banner-btn:hover {
+  background: #6d28d9;
+  color: #facc15;
+
+}
+
+.banner-side {
+  background: url('your-side-banner.jpg') center/cover no-repeat;
+  background-color: #c084fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.banner-side-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #facc15;
+  
+}
+
+.highlight {
+  color: #facc15;
+}
+
+.banner-btn-outline {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid #facc15;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.banner-btn-outline:hover {
+  background-color:#facc15 ;
+}
