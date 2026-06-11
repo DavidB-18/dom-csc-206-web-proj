@@ -4,16 +4,12 @@
 
 A multi-section e-commerce marketplace homepage built with vanilla HTML, CSS, and JavaScript. This is a team project for CSC 206, split across six contributors with each person owning one or more sections.
 
-## Team
+## Teams
 
-| Name | Section | Files |
-|---|---|---|
-| Benson | Navbar, Hero, Categories | navbar.css, hero.css, categories.css |
-| Nelson | Deals & Offers, Home & Outdoor | deals.css, outdoor.css |
-| Ogo | Consumer Electronics & Gadgets | electronics.css |
-| Ini | Recommended Items | recommended.css |
-| Frank | Call to Action | cta.css |
-| Obama | Footer | footer.css |
+- RESOURCES: Badejo Toluleke, Adetola Taiwo, Cletus Godspower.
+- UI/UX: Oyetunji Ifeoluwa, Nji-Kolawole Valour
+- DEVELOPERS: Benson David, Ochai Nelson, John Inioluwa Joshua, Alabi Ogooluwa, Adeleke        Obamayowa, Ogundele Frank, Adeagbo Faithfulness, Ologunpesi Oluwagbenga.
+- DOCUMENTATION: Obiremi Odunola Deborah, Ugorji Beryl Esther, Ogunjobi Micheal Obamayowa, Olajuyigbe Temiloluwa Timothy
 
 ## Project Structure
 
