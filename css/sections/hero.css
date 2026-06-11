@@ -55,7 +55,7 @@
 }
 
 .banner-main {
-  background: url('your-main-banner.jpg') center/cover no-repeat;
+  background: url('../../ASSETS/HERO\ 3.jpg') center/cover no-repeat;
   background-color: #c084fc;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@
 }
 
 .banner-side {
-  background: url('your-side-banner.jpg') center/cover no-repeat;
+  background: url('../../ASSETS/sub-hero.jpg') center/cover no-repeat;
   background-color: #c084fc;
   display: flex;
   flex-direction: column;
