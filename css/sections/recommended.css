@@ -1,34 +1,76 @@
-#recommended{
-    display:flex;
-    gap: 16px;
+/* 1. Main Section Container */
+#recommended {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  max-width: 1360px;
+  margin: 0 auto;
+  border-radius: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+#recommended h1 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* 2. Responsive 5-Column Grid Layout */
+.card-container {
+  display: grid;
+  /* Creates up to 5 equal columns, shrinking automatically on smaller screens */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* 3. Individual Card Styling */
 .card {
-width: 200px;
- background: white;
- border-radius: 5px;
- overflow: hidden;
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #eef2f6; /* Very light grey outline */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
+
+
+.card > img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* Keeps images from warping or stretching */
+  background-color: #f0f4f9; 
+  padding: 16px; /* Insets the image from the container borders */
+  box-sizing: border-box;
+}
+
+/* 5. Inner Content Padding */
+.card-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Tight vertical spacing */
+}
+
+/* 6. Pricing Typography */
 .card-content h2 {
-        margin-top: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
 }
-h2{
-    color: rgb(97, 26, 163);
-    font-size: large;
+
+/* 7. Rating Star Alignment and Color */
+.card-content .rating {
+  color: #ff9800; /* Star icon gold color */
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin: 0;
 }
-.card-content{
-    padding: 15px;
-}
-h3{
-    font-size: smaller;
-    font-family:  Calibri;
-    font-weight: 300;
-}
-.rating{
-    color: rgb(236, 202, 10);
-}
-.cards{
-    display: grid;
-    grid-template-columns: repeat(4, 0fr);
-    gap: 16px
+
+/* 8. Product Titles (Muted and small text style) */
+.card-content h3 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #64748b; /* Muted gray text color */
+  line-height: 1.4;
+  margin: 0;
 }
